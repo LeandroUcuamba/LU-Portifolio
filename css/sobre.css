@@ -1,0 +1,263 @@
+@import 'menu-mobile.css';
+
+body {
+  margin: 0;
+  border: 0;
+  background-color: #121212;
+  color: white;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+
+nav img{
+  width: 50px;
+  height: 32px;
+  padding-right: 5px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+main {
+  color: #c4c4c4;
+  margin-right: 60px;
+  padding-top: 220px;
+  padding-left: 60px;
+  margin-bottom: 301px;
+}
+
+.NomeDev{
+  font-size: 30px;
+  padding-left: 5px;
+}
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer img {
+  width: 14px;
+  position: relative;
+  top: 2px;
+  margin: 0 1.5px;
+}
+
+footer p {
+  display: inline-block;
+
+}
+
+footer span {
+  color: rgb(233, 78, 78);
+  font-weight: bold;
+  transition: .4s;
+}
+
+footer span:hover {
+  color: yellow
+}
+
+.projetos,
+.sobre-mim {
+  background-color: #151515;
+  z-index: 0;
+  position: relative;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+  background-color: #151515;
+  border-bottom: 2px solid #272727;
+  font-weight: bold;
+  height: 80px;
+  transition: 0.3s;
+}
+
+nav.fixed {
+  box-shadow: 0 4px 4px rgba(0,0,0,.3);
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid rgb(233, 78, 78);
+  margin-top: 5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+  transform: scaleX(1);
+}
+
+nav p {
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+nav p a {
+  color: rgb(233, 78, 78);
+  transition: 0.3s;
+}
+
+nav p a:hover {
+  color: yellow;
+}
+
+.principal,
+.sobre-mim,
+.experiencia,
+.projetos {
+  padding: 6.5% 15%;
+  min-height: 35vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.paragrafo_sobre{
+  width: 680px;
+  font-size: 20px;
+}
+
+i{
+  color: rgb(233, 78, 78);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 1325px) {
+  .principal h1 {
+    font-size: 1rem;
+  }
+  .principal span {
+    font-size: 2.2rem;
+  }
+
+  .principal .principal__input-cursor {
+    height: 35px;
+  }
+
+  .principal,
+  .sobre-mim,
+  .experiencia,
+  .projetos {
+    padding: 6.5%;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .paragrafo_sobre{
+    width: 580px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .paragrafo_sobre{
+    width: 230px;
+    font-size: 12px;
+  }
+}
+
+
+/* Projetos */
+
+.container{
+  padding: 3rem;
+}
+
+h1{
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.image{
+  display: block;
+  width: 100%;
+  height: 220px;
+}
+
+.caption{
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+  text-align: center;
+  color: #272727;
+}
+
+.thumbnail:hover{
+  transform: translateY(-30px);
+}
+
+.img-container:hover .overlay{
+  opacity: 1;
+}
+
+.img-container{
+  padding-bottom: 18px;
+  padding-top: 12px;
+}
+
+.Descricao{
+  padding-top: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(233, 78, 78);
+  border-radius: 12px;
+  color: yellow;
+  text-align: center;
+}
+
+.Descricao .bbb{
+   margin-top: 10px;
+   width: 220px;
+   height: 28px;
+   color: white;
+   background-color: rgb(112, 62, 62);
+   margin: 0 auto;
+}
+
+.desc{
+  font: 900;
+  color: black;
+  padding-bottom: 10px;
+}
